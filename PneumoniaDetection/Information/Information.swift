@@ -20,30 +20,60 @@ struct Information: View {
                     .padding(.bottom, 45)
                     .padding(.top, 22)
                 
-                NavigationLink(destination: DiagTreatment(), label:{
-                
-                VStack(alignment:.center, spacing: 10){
+                HStack {
+                    NavigationLink(destination: DiagTreatment(), label:{
                     
-                    Image(systemName: "pills.fill")
-                        .font(.system(size: 60))
-                        .foregroundColor(.red)
-                        .padding(.bottom, 10)
-                    
-                    Text("Diagnosis & Treatment")
-                        .fontWeight(.medium)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(.black)
-                    
-                }
-                .frame(width: 170, height: 170)
-                .background(.white)
-                .cornerRadius(15)
-                .clipped()
-                .shadow(color: Color(red: 195/255, green: 195/255, blue: 195/255), radius: 3, x: 0, y: 1)
-                })
-                    .navigationBarHidden(true)
-                    .navigationBarTitle("Information")
+                    VStack(alignment:.center, spacing: 10){
+                        
+                        Image(systemName: "pills.fill")
+                            .font(.system(size: 60))
+                            .foregroundColor(.red)
+                            .padding(.bottom, 10)
+                        
+                        Text("Diagnosis & Treatment")
+                            .fontWeight(.medium)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(.black)
+                        
+                    }
+                    .frame(width: 170, height: 170)
+                    .background(.white)
+                    .cornerRadius(15)
+                    .clipped()
+                    .shadow(color: Color(red: 195/255, green: 195/255, blue: 195/255), radius: 3, x: 0, y: 1)
+                    })
+                        .navigationBarHidden(true)
+                        .navigationBarTitle("Information")
                     .navigationBarBackButtonHidden(true)
+                    
+                    //button for mapView
+                    NavigationLink(destination: DiagTreatment(), label:{
+                    
+                    VStack(alignment:.center, spacing: 10){
+                        
+                        Image(systemName: "pills.fill")
+                            .font(.system(size: 60))
+                            .foregroundColor(.red)
+                            .padding(.bottom, 10)
+                        
+                        Text("Diagnosis & Treatment")
+                            .fontWeight(.medium)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(.black)
+                        
+                    }
+                    .frame(width: 170, height: 170)
+                    .background(.white)
+                    .cornerRadius(15)
+                    .clipped()
+                    .shadow(color: Color(red: 195/255, green: 195/255, blue: 195/255), radius: 3, x: 0, y: 1)
+                    })
+                        .navigationBarHidden(true)
+                        .navigationBarTitle("Information")
+                        .navigationBarBackButtonHidden(true)
+                }
+                
+                
                 Spacer()
             }
             }
