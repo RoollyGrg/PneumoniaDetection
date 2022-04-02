@@ -20,7 +20,7 @@ struct MapAnnotationView: View {
                 .font(.headline)
                 .foregroundColor(.white)
                 .padding(6)
-                .background(accentColor)
+                .background(.red)
                 .cornerRadius(36)
             
             Image(systemName: "triangle.fill")
@@ -28,7 +28,7 @@ struct MapAnnotationView: View {
                 .scaledToFit()
                 .frame(width: 10, height: 10)
                 .font(.headline)
-                .foregroundColor(accentColor)
+                .foregroundColor(.red)
                 .rotationEffect(Angle(degrees: 180))
                 .offset(y: -3)
                 .padding(.bottom, 40)
