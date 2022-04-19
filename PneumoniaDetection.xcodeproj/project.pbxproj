@@ -26,6 +26,8 @@
 		8A84CB4327CB3D5C00CCF4CE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A84CB4227CB3D5C00CCF4CE /* ImagePicker.swift */; };
 		8AB8753627DDCBEE00C44AD1 /* DiagTreatment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8753527DDCBEE00C44AD1 /* DiagTreatment.swift */; };
 		8AB8753827DDCC6C00C44AD1 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8753727DDCC6C00C44AD1 /* Information.swift */; };
+		8AD91B9D280EEFB600496791 /* Sign_in.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD91B9C280EEFB600496791 /* Sign_in.swift */; };
+		8AD91B9F280EF0A400496791 /* Sign_up.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD91B9E280EF0A400496791 /* Sign_up.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		8A84CB4227CB3D5C00CCF4CE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		8AB8753527DDCBEE00C44AD1 /* DiagTreatment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagTreatment.swift; sourceTree = "<group>"; };
 		8AB8753727DDCC6C00C44AD1 /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
+		8AD91B9C280EEFB600496791 /* Sign_in.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign_in.swift; sourceTree = "<group>"; };
+		8AD91B9E280EF0A400496791 /* Sign_up.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign_up.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 		8A74B9C227B8DDCE001AB68D /* PneumoniaDetection */ = {
 			isa = PBXGroup;
 			children = (
+				8AD91B9B280EEF8800496791 /* LoginAuth */,
 				8A74E98827F51A7B0022F562 /* Models */,
 				8A74E98527F51A110022F562 /* ViewModels */,
 				8A74E98227F519A30022F562 /* Views */,
@@ -200,6 +205,15 @@
 			path = ImagePIcker;
 			sourceTree = "<group>";
 		};
+		8AD91B9B280EEF8800496791 /* LoginAuth */ = {
+			isa = PBXGroup;
+			children = (
+				8AD91B9C280EEFB600496791 /* Sign_in.swift */,
+				8AD91B9E280EF0A400496791 /* Sign_up.swift */,
+			);
+			path = LoginAuth;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -277,6 +291,7 @@
 				8AB8753627DDCBEE00C44AD1 /* DiagTreatment.swift in Sources */,
 				8A74E99027F51DE30022F562 /* LocationPreviewView.swift in Sources */,
 				8A74B9D627B8E786001AB68D /* Profile.swift in Sources */,
+				8AD91B9D280EEFB600496791 /* Sign_in.swift in Sources */,
 				8A74E99427F51E6D0022F562 /* MapAnnotationView.swift in Sources */,
 				8A74E99227F51E2D0022F562 /* LocaitonsListView.swift in Sources */,
 				8A74E98127F519560022F562 /* LocationsDataService.swift in Sources */,
@@ -287,6 +302,7 @@
 				8A84CB4327CB3D5C00CCF4CE /* ImagePicker.swift in Sources */,
 				8A74E98A27F51AA40022F562 /* Location.swift in Sources */,
 				8A74B9C427B8DDCE001AB68D /* PneumoniaDetectionApp.swift in Sources */,
+				8AD91B9F280EF0A400496791 /* Sign_up.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
