@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A0E2A2127EEF3E0003ED57C /* PneumoniaML.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8A0E2A2027EEF3E0003ED57C /* PneumoniaML.mlmodel */; };
 		8A0E2A2527EF0074003ED57C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0E2A2427EF0074003ED57C /* Extensions.swift */; };
+		8A405123284B06F30001A567 /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A405122284B06F30001A567 /* Doctor.swift */; };
+		8A405125284B07380001A567 /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A405124284B07380001A567 /* Help.swift */; };
 		8A74B9C427B8DDCE001AB68D /* PneumoniaDetectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A74B9C327B8DDCE001AB68D /* PneumoniaDetectionApp.swift */; };
 		8A74B9C627B8DDCE001AB68D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A74B9C527B8DDCE001AB68D /* ContentView.swift */; };
 		8A74B9C827B8DDD3001AB68D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A74B9C727B8DDD3001AB68D /* Assets.xcassets */; };
@@ -28,11 +29,15 @@
 		8AB8753827DDCC6C00C44AD1 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8753727DDCC6C00C44AD1 /* Information.swift */; };
 		8AD91B9D280EEFB600496791 /* Sign_in.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD91B9C280EEFB600496791 /* Sign_in.swift */; };
 		8AD91B9F280EF0A400496791 /* Sign_up.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD91B9E280EF0A400496791 /* Sign_up.swift */; };
+		8AFFE0EA284B0B6B0024D847 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFE0E9284B0B6B0024D847 /* Classifier.swift */; };
+		8AFFE0EC284B0BA10024D847 /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFE0EB284B0BA10024D847 /* ImageClassifier.swift */; };
+		8AFFE0EE284B0BEE0024D847 /* Ptest.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFE0ED284B0BEE0024D847 /* Ptest.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8A0E2A2027EEF3E0003ED57C /* PneumoniaML.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PneumoniaML.mlmodel; sourceTree = "<group>"; };
 		8A0E2A2427EF0074003ED57C /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8A405122284B06F30001A567 /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
+		8A405124284B07380001A567 /* Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Help.swift; sourceTree = "<group>"; };
 		8A74B9C027B8DDCE001AB68D /* PneumoniaDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PneumoniaDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A74B9C327B8DDCE001AB68D /* PneumoniaDetectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PneumoniaDetectionApp.swift; sourceTree = "<group>"; };
 		8A74B9C527B8DDCE001AB68D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +58,9 @@
 		8AB8753727DDCC6C00C44AD1 /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
 		8AD91B9C280EEFB600496791 /* Sign_in.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign_in.swift; sourceTree = "<group>"; };
 		8AD91B9E280EF0A400496791 /* Sign_up.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign_up.swift; sourceTree = "<group>"; };
+		8AFFE0E9284B0B6B0024D847 /* Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
+		8AFFE0EB284B0BA10024D847 /* ImageClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassifier.swift; sourceTree = "<group>"; };
+		8AFFE0ED284B0BEE0024D847 /* Ptest.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Ptest.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +77,25 @@
 		8A0E2A1F27EEF3CB003ED57C /* coreml */ = {
 			isa = PBXGroup;
 			children = (
-				8A0E2A2027EEF3E0003ED57C /* PneumoniaML.mlmodel */,
+				8AFFE0ED284B0BEE0024D847 /* Ptest.mlmodel */,
 			);
 			path = coreml;
+			sourceTree = "<group>";
+		};
+		8A405120284B06CC0001A567 /* Doctor */ = {
+			isa = PBXGroup;
+			children = (
+				8A405122284B06F30001A567 /* Doctor.swift */,
+			);
+			path = Doctor;
+			sourceTree = "<group>";
+		};
+		8A405121284B06D70001A567 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				8A405124284B07380001A567 /* Help.swift */,
+			);
+			path = Help;
 			sourceTree = "<group>";
 		};
 		8A74B9B727B8DDCE001AB68D = {
@@ -100,7 +124,6 @@
 				8A74E97F27F519100022F562 /* DataSources */,
 				8A0E2A2427EF0074003ED57C /* Extensions.swift */,
 				8A0E2A1F27EEF3CB003ED57C /* coreml */,
-				8A84CB3F27CB3D3200CCF4CE /* ImagePIcker */,
 				8A74B9C327B8DDCE001AB68D /* PneumoniaDetectionApp.swift */,
 				8A74B9C527B8DDCE001AB68D /* ContentView.swift */,
 				8A74B9C727B8DDD3001AB68D /* Assets.xcassets */,
@@ -136,6 +159,8 @@
 		8A74B9D727B8E7AF001AB68D /* Information */ = {
 			isa = PBXGroup;
 			children = (
+				8A405121284B06D70001A567 /* Help */,
+				8A405120284B06CC0001A567 /* Doctor */,
 				8A74E98C27F51CE10022F562 /* Hospitals */,
 				8A74E98B27F51CC90022F562 /* Diagnosis&Treatment */,
 				8AB8753727DDCC6C00C44AD1 /* Information.swift */,
@@ -165,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				8A74E98627F51A310022F562 /* LocationViewModel.swift */,
+				8AFFE0EB284B0BA10024D847 /* ImageClassifier.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -173,6 +199,8 @@
 			isa = PBXGroup;
 			children = (
 				8A74E98927F51AA40022F562 /* Location.swift */,
+				8A84CB4227CB3D5C00CCF4CE /* ImagePicker.swift */,
+				8AFFE0E9284B0B6B0024D847 /* Classifier.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -195,14 +223,6 @@
 				8A74E99527F51E9B0022F562 /* LocationDetailView.swift */,
 			);
 			path = Hospitals;
-			sourceTree = "<group>";
-		};
-		8A84CB3F27CB3D3200CCF4CE /* ImagePIcker */ = {
-			isa = PBXGroup;
-			children = (
-				8A84CB4227CB3D5C00CCF4CE /* ImagePicker.swift */,
-			);
-			path = ImagePIcker;
 			sourceTree = "<group>";
 		};
 		8AD91B9B280EEF8800496791 /* LoginAuth */ = {
@@ -289,17 +309,21 @@
 				8A74B9D327B8DE43001AB68D /* PneumoniaDetect.swift in Sources */,
 				8AB8753827DDCC6C00C44AD1 /* Information.swift in Sources */,
 				8AB8753627DDCBEE00C44AD1 /* DiagTreatment.swift in Sources */,
+				8AFFE0EE284B0BEE0024D847 /* Ptest.mlmodel in Sources */,
 				8A74E99027F51DE30022F562 /* LocationPreviewView.swift in Sources */,
+				8A405123284B06F30001A567 /* Doctor.swift in Sources */,
 				8A74B9D627B8E786001AB68D /* Profile.swift in Sources */,
 				8AD91B9D280EEFB600496791 /* Sign_in.swift in Sources */,
 				8A74E99427F51E6D0022F562 /* MapAnnotationView.swift in Sources */,
 				8A74E99227F51E2D0022F562 /* LocaitonsListView.swift in Sources */,
 				8A74E98127F519560022F562 /* LocationsDataService.swift in Sources */,
+				8AFFE0EC284B0BA10024D847 /* ImageClassifier.swift in Sources */,
 				8A74E98727F51A310022F562 /* LocationViewModel.swift in Sources */,
 				8A74B9C627B8DDCE001AB68D /* ContentView.swift in Sources */,
-				8A0E2A2127EEF3E0003ED57C /* PneumoniaML.mlmodel in Sources */,
+				8A405125284B07380001A567 /* Help.swift in Sources */,
 				8A0E2A2527EF0074003ED57C /* Extensions.swift in Sources */,
 				8A84CB4327CB3D5C00CCF4CE /* ImagePicker.swift in Sources */,
+				8AFFE0EA284B0B6B0024D847 /* Classifier.swift in Sources */,
 				8A74E98A27F51AA40022F562 /* Location.swift in Sources */,
 				8A74B9C427B8DDCE001AB68D /* PneumoniaDetectionApp.swift in Sources */,
 				8AD91B9F280EF0A400496791 /* Sign_up.swift in Sources */,

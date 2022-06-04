@@ -3,7 +3,6 @@
 //  PneumoniaDetection
 //
 //  Created by Bibek Gurung on 13/02/2022.
-//
 
 import SwiftUI
 
@@ -13,24 +12,26 @@ struct ContentView: View {
         TabView(selection: $selected){
             Information()
                 .tabItem{
-                    Image(systemName: "doc.on.doc.fill")
+                    Image(systemName: "filemenu.and.selection")
 
                 }.tag(2)
-            
-            PneumoniaDetect()
+
+            PneumoniaDetect(classifier: ImageClassifier())
+                .navigationBarHidden(true)
                 .tabItem{
-                    Image(systemName: "house.fill")
+                    Image(systemName: "rays")
 
                 }.tag(0)
-            
+
             Profile()
-            .tabItem{
-                Image(systemName: "person.fill")
+                .tabItem{
+                    Image(systemName: "person.fill")
 
             }.tag(1)
 
         }
-        .accentColor(.black)
+        .accentColor(.blue)
+
     }
 }
 

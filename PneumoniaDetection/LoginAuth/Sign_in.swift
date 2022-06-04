@@ -176,6 +176,7 @@ struct Sign_in: View {
               print("Your result...")
               print(String(data: data, encoding: .utf8)!)
               semaphore.signal()
+                
             }
 
             task.resume()
