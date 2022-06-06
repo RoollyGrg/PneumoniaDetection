@@ -11,7 +11,9 @@ import SwiftUI
 struct PneumoniaDetectionApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Sign_in()
+                .environmentObject(UserSettings())
+            
         }
     }
 }

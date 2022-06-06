@@ -27,11 +27,13 @@
 		8A84CB4327CB3D5C00CCF4CE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A84CB4227CB3D5C00CCF4CE /* ImagePicker.swift */; };
 		8AB8753627DDCBEE00C44AD1 /* DiagTreatment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8753527DDCBEE00C44AD1 /* DiagTreatment.swift */; };
 		8AB8753827DDCC6C00C44AD1 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8753727DDCC6C00C44AD1 /* Information.swift */; };
+		8AD5E216284E04AB004FF8BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AD5E215284E04AB004FF8BD /* LaunchScreen.storyboard */; };
 		8AD91B9D280EEFB600496791 /* Sign_in.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD91B9C280EEFB600496791 /* Sign_in.swift */; };
 		8AD91B9F280EF0A400496791 /* Sign_up.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD91B9E280EF0A400496791 /* Sign_up.swift */; };
 		8AFFE0EA284B0B6B0024D847 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFE0E9284B0B6B0024D847 /* Classifier.swift */; };
 		8AFFE0EC284B0BA10024D847 /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFE0EB284B0BA10024D847 /* ImageClassifier.swift */; };
 		8AFFE0EE284B0BEE0024D847 /* Ptest.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFE0ED284B0BEE0024D847 /* Ptest.mlmodel */; };
+		8AFFE0F8284BE4440024D847 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFFE0F7284BE4440024D847 /* UserSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,11 +58,14 @@
 		8A84CB4227CB3D5C00CCF4CE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		8AB8753527DDCBEE00C44AD1 /* DiagTreatment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagTreatment.swift; sourceTree = "<group>"; };
 		8AB8753727DDCC6C00C44AD1 /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
+		8AD5E215284E04AB004FF8BD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "../../../../../../../../../Downloads/xcode test projects/PneumoniaDetection/PneumoniaDetection/Views/launch screen/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		8AD91B9C280EEFB600496791 /* Sign_in.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign_in.swift; sourceTree = "<group>"; };
 		8AD91B9E280EF0A400496791 /* Sign_up.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign_up.swift; sourceTree = "<group>"; };
 		8AFFE0E9284B0B6B0024D847 /* Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
 		8AFFE0EB284B0BA10024D847 /* ImageClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassifier.swift; sourceTree = "<group>"; };
 		8AFFE0ED284B0BEE0024D847 /* Ptest.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Ptest.mlmodel; sourceTree = "<group>"; };
+		8AFFE0F7284BE4440024D847 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		8AFFE101284C0C1E0024D847 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +122,7 @@
 		8A74B9C227B8DDCE001AB68D /* PneumoniaDetection */ = {
 			isa = PBXGroup;
 			children = (
+				8AFFE101284C0C1E0024D847 /* Info.plist */,
 				8AD91B9B280EEF8800496791 /* LoginAuth */,
 				8A74E98827F51A7B0022F562 /* Models */,
 				8A74E98527F51A110022F562 /* ViewModels */,
@@ -179,6 +185,7 @@
 		8A74E98227F519A30022F562 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8AFFE0FB284C080A0024D847 /* launch screen */,
 				8A74B9D727B8E7AF001AB68D /* Information */,
 				8A74B9D427B8E76E001AB68D /* profile */,
 				8A74B9D127B8DDFF001AB68D /* Home */,
@@ -191,6 +198,7 @@
 			children = (
 				8A74E98627F51A310022F562 /* LocationViewModel.swift */,
 				8AFFE0EB284B0BA10024D847 /* ImageClassifier.swift */,
+				8AFFE0F7284BE4440024D847 /* UserSettings.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -232,6 +240,14 @@
 				8AD91B9E280EF0A400496791 /* Sign_up.swift */,
 			);
 			path = LoginAuth;
+			sourceTree = "<group>";
+		};
+		8AFFE0FB284C080A0024D847 /* launch screen */ = {
+			isa = PBXGroup;
+			children = (
+				8AD5E215284E04AB004FF8BD /* LaunchScreen.storyboard */,
+			);
+			path = "launch screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AD5E216284E04AB004FF8BD /* LaunchScreen.storyboard in Resources */,
 				8A74B9CB27B8DDD3001AB68D /* Preview Assets.xcassets in Resources */,
 				8A74B9C827B8DDD3001AB68D /* Assets.xcassets in Resources */,
 			);
@@ -317,6 +334,7 @@
 				8A74E99427F51E6D0022F562 /* MapAnnotationView.swift in Sources */,
 				8A74E99227F51E2D0022F562 /* LocaitonsListView.swift in Sources */,
 				8A74E98127F519560022F562 /* LocationsDataService.swift in Sources */,
+				8AFFE0F8284BE4440024D847 /* UserSettings.swift in Sources */,
 				8AFFE0EC284B0BA10024D847 /* ImageClassifier.swift in Sources */,
 				8A74E98727F51A310022F562 /* LocationViewModel.swift in Sources */,
 				8A74B9C627B8DDCE001AB68D /* ContentView.swift in Sources */,
@@ -460,12 +478,15 @@
 				DEVELOPMENT_TEAM = 3F6GVKFK9A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PneumoniaDetection/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Pneumon;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow to let the app use the camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -490,12 +511,15 @@
 				DEVELOPMENT_TEAM = 3F6GVKFK9A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PneumoniaDetection/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Pneumon;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Allow to let the app use the camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

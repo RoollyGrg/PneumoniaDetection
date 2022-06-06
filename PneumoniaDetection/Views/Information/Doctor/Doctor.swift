@@ -8,17 +8,24 @@
 import SwiftUI
 
 struct Doctor: View {
+    
+    var phoneNumber = "9826152016"
+    
     var body: some View {
         ZStack{
 
             ScrollView {
                 VStack{
+                    //title of the page
                         Text("Doctor")
                             .font(.system(size: 40))
                             .fontWeight(.bold)
                             .frame(width: 330, alignment: .leading)
+
                         
                         HStack {
+                            
+                            //Prof. Dr. Umid Kumar Shrestha
                             VStack {
                                 
                                 VStack(alignment:.center, spacing: 10){
@@ -36,8 +43,27 @@ struct Doctor: View {
                                         .multilineTextAlignment(.center)
                                         .foregroundColor(.black)
                                     
+                                    Spacer()
+                                        .frame(height: 10)
+                                    
+                                    Button(action: {
+                                        let tel = "tel://"
+                                        let formattedString = tel + phoneNumber
+                                        guard let url = URL(string: formattedString) else { return }
+                                        UIApplication.shared.open(url)
+                                       }) {
+                                       Text("Call")
+                                               .fontWeight(.bold)
+                                               .frame(width: 120)
+                                               .padding(7)
+                                               .background(.blue)
+                                               .foregroundColor(.white)
+                                               .cornerRadius(20)
+                                               
+                                    }
+                                    
                                 }
-                                .frame(width: 160, height: 200)
+                                .frame(width: 150, height: 250)
                                 .background(.white)
                                 .cornerRadius(15)
                                 .clipped()
@@ -48,7 +74,7 @@ struct Doctor: View {
                             Spacer()
                                 .frame(width: 20)
                             
-                            //hospital location
+                            //Dr. Mahesh Dahal
                             VStack{
                                 
                                 VStack(alignment:.center, spacing: 10){
@@ -66,8 +92,26 @@ struct Doctor: View {
                                         .multilineTextAlignment(.center)
                                         .foregroundColor(.black)
                                     
+                                    Spacer()
+                                        .frame(height: 30)
+                                    
+                                    Button(action: {
+                                        let tel = "tel://"
+                                        let formattedString = tel + phoneNumber
+                                        guard let url = URL(string: formattedString) else { return }
+                                        UIApplication.shared.open(url)
+                                       }) {
+                                       Text("Call")
+                                               .fontWeight(.bold)
+                                               .frame(width: 120)
+                                               .padding(7)
+                                               .background(.blue)
+                                               .foregroundColor(.white)
+                                               .cornerRadius(20)
+                                               
+                                    }
                                 }
-                                .frame(width: 160, height: 200)
+                                .frame(width: 150, height: 250)
                                 .background(.white)
                                 .cornerRadius(15)
                                 .clipped()
@@ -81,6 +125,7 @@ struct Doctor: View {
                             .frame(height: 30)
                         
                         HStack {
+                            //Dr. Pawan Singh Bhat
                             VStack {
                                 
                                 VStack(alignment:.center, spacing: 10){
@@ -98,8 +143,27 @@ struct Doctor: View {
                                         .multilineTextAlignment(.center)
                                         .foregroundColor(.black)
                                     
+                                    Spacer()
+                                        .frame(height: 10)
+                                    
+                                    Button(action: {
+                                        let tel = "tel://"
+                                        let formattedString = tel + phoneNumber
+                                        guard let url = URL(string: formattedString) else { return }
+                                        UIApplication.shared.open(url)
+                                       }) {
+                                       Text("Call")
+                                               .fontWeight(.bold)
+                                               .frame(width: 120)
+                                               .padding(7)
+                                               .background(.blue)
+                                               .foregroundColor(.white)
+                                               .cornerRadius(20)
+                                               
+                                    }
+                                    
                                 }
-                                .frame(width: 160, height: 200)
+                                .frame(width: 150, height: 250)
                                 .background(.white)
                                 .cornerRadius(15)
                                 .clipped()
@@ -110,7 +174,7 @@ struct Doctor: View {
                             Spacer()
                                 .frame(width: 20)
                             
-                            //hospital location
+                            //Dr. Prativa Shrestha
                             VStack{
                                 
                                 VStack(alignment:.center, spacing: 10){
@@ -128,8 +192,27 @@ struct Doctor: View {
                                         .multilineTextAlignment(.center)
                                         .foregroundColor(.black)
                                     
+                                    Spacer()
+                                        .frame(height: 10)
+                                    
+                                    Button(action: {
+                                        let tel = "tel://"
+                                        let formattedString = tel + phoneNumber
+                                        guard let url = URL(string: formattedString) else { return }
+                                        UIApplication.shared.open(url)
+                                       }) {
+                                       Text("Call")
+                                               .fontWeight(.bold)
+                                               .frame(width: 120)
+                                               .padding(7)
+                                               .background(.blue)
+                                               .foregroundColor(.white)
+                                               .cornerRadius(20)
+                                               
+                                    }
+                                    
                                 }
-                                .frame(width: 160, height: 200)
+                                .frame(width: 150, height: 250)
                                 .background(.white)
                                 .cornerRadius(15)
                                 .clipped()
@@ -144,6 +227,7 @@ struct Doctor: View {
                             .frame(height: 30)
                         
                         HStack {
+                            //Dr. Sanjeev Thapa
                             VStack {
                                 
                                 VStack(alignment:.center, spacing: 10){
@@ -160,9 +244,28 @@ struct Doctor: View {
                                         .fontWeight(.medium)
                                         .multilineTextAlignment(.center)
                                         .foregroundColor(.black)
+                                  
+                                    Spacer()
+                                        .frame(height: 30)
+                                    
+                                    Button(action: {
+                                        let tel = "tel://"
+                                        let formattedString = tel + phoneNumber
+                                        guard let url = URL(string: formattedString) else { return }
+                                        UIApplication.shared.open(url)
+                                       }) {
+                                       Text("Call")
+                                               .fontWeight(.bold)
+                                               .frame(width: 120)
+                                               .padding(7)
+                                               .background(.blue)
+                                               .foregroundColor(.white)
+                                               .cornerRadius(20)
+                                               
+                                    }
                                     
                                 }
-                                .frame(width: 160, height: 200)
+                                .frame(width: 150, height: 250)
                                 .background(.white)
                                 .cornerRadius(15)
                                 .clipped()
@@ -173,7 +276,7 @@ struct Doctor: View {
                             Spacer()
                                 .frame(width: 20)
                             
-                            //hospital location
+                            //Dr. Sheelendra Shakya
                             VStack{
                                 
                                 VStack(alignment:.center, spacing: 10){
@@ -191,8 +294,27 @@ struct Doctor: View {
                                         .multilineTextAlignment(.center)
                                         .foregroundColor(.black)
                                     
+                                    Spacer()
+                                        .frame(height: 10)
+                                    
+                                    Button(action: {
+                                        let tel = "tel://"
+                                        let formattedString = tel + phoneNumber
+                                        guard let url = URL(string: formattedString) else { return }
+                                        UIApplication.shared.open(url)
+                                       }) {
+                                       Text("Call")
+                                               .fontWeight(.bold)
+                                               .frame(width: 120)
+                                               .padding(7)
+                                               .background(.blue)
+                                               .foregroundColor(.white)
+                                               .cornerRadius(20)
+                                               
+                                    }
+                                    
                                 }
-                                .frame(width: 160, height: 200)
+                                .frame(width: 150, height: 250)
                                 .background(.white)
                                 .cornerRadius(15)
                                 .clipped()
@@ -207,6 +329,7 @@ struct Doctor: View {
                             .frame(height: 30)
                         
                         HStack {
+                            //Dr. Banira Karki
                             VStack {
                                 
                                 VStack(alignment:.center, spacing: 10){
@@ -223,9 +346,28 @@ struct Doctor: View {
                                         .fontWeight(.medium)
                                         .multilineTextAlignment(.center)
                                         .foregroundColor(.black)
+                                   
+                                    Spacer()
+                                        .frame(height: 30)
+                                    
+                                    Button(action: {
+                                        let tel = "tel://"
+                                        let formattedString = tel + phoneNumber
+                                        guard let url = URL(string: formattedString) else { return }
+                                        UIApplication.shared.open(url)
+                                       }) {
+                                       Text("Call")
+                                               .fontWeight(.bold)
+                                               .frame(width: 120)
+                                               .padding(7)
+                                               .background(.blue)
+                                               .foregroundColor(.white)
+                                               .cornerRadius(20)
+                                               
+                                    }
                                     
                                 }
-                                .frame(width: 160, height: 200)
+                                .frame(width: 150, height: 250)
                                 .background(.white)
                                 .cornerRadius(15)
                                 .clipped()
@@ -236,7 +378,7 @@ struct Doctor: View {
                             Spacer()
                                 .frame(width: 20)
                             
-                            //hospital location
+                            //Assoc. Prof. Dr. Smrity Maskey
                             VStack{
                                 
                                 VStack(alignment:.center, spacing: 10){
@@ -254,8 +396,28 @@ struct Doctor: View {
                                         .multilineTextAlignment(.center)
                                         .foregroundColor(.black)
                                     
+                                    Spacer()
+                                        .frame(height: 10)
+                                    
+                                    Button(action: {
+                                        let tel = "tel://"
+                                        let formattedString = tel + phoneNumber
+                                        guard let url = URL(string: formattedString) else { return }
+                                        UIApplication.shared.open(url)
+                                       }) {
+                                       Text("Call")
+                                               .fontWeight(.bold)
+                                               .frame(width: 120)
+                                               .padding(7)
+                                               .background(.blue)
+                                               .foregroundColor(.white)
+                                               .cornerRadius(20)
+                                               
+                                    }
+                                    
+                                    
                                 }
-                                .frame(width: 160, height: 200)
+                                .frame(width: 150, height: 250)
                                 .background(.white)
                                 .cornerRadius(15)
                                 .clipped()

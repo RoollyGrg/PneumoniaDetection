@@ -2,7 +2,7 @@
 //  Sign_up.swift
 //  PneumoniaDetection
 //
-//  Created by Bibek Gurung on 19/04/2022.
+//  Created by Bibek Gurung on 10/04/2022.
 //
 
 import SwiftUI
@@ -11,16 +11,14 @@ import Foundation
 import FoundationNetworking
 #endif
 
-
 struct Sign_up: View {
     @State var username = ""
     @State var email = ""
     @State var password = ""
     
-    
     var body: some View {
         ZStack{
-            NavigationView {
+            NavigationView{
                 VStack{
                     Text("Sign up")
                         .font(.system(size: 40))
@@ -83,27 +81,40 @@ struct Sign_up: View {
                             Divider()
                                 .frame(width: 250)
                         
-                       
-                        Button(action: {
-                            signup(username1: username, email1: email, password: password)
-                        }, label: {
-                            Text("Sign up")
-                                .font(.system(size: 19))
-                                .fontWeight(.bold)
-                                .foregroundColor(.white)
-                                .frame(width: 300, height: 42)
-                                .background(.green)
-                                .cornerRadius(7)
-                                .padding(.top, 40)
-                                .padding(.bottom, 40)
-                        })
                         
+                        
+                        Button(action: {
+                           // signup
+                        })
+                        {
+                            NavigationLink(destination: Sign_in()
+                                .environmentObject(UserSettings())
+                                .navigationBarTitle(Text(" "))
+                                .navigationBarBackButtonHidden(true)
+                                .navigationBarHidden(true)
+                                .onAppear(){
+                                self.signup(username1: username, email1: email, password: password)
+                            }) {
+                                 Text("Sign up")
+                                     .font(.system(size: 19))
+                                     .fontWeight(.bold)
+                                     .foregroundColor(.white)
+                                     .frame(width: 300, height: 42)
+                                     .background(.green)
+                                     .cornerRadius(7)
+                                     .padding(.top, 40)
+                                     .padding(.bottom, 40)
+                             }
+                         }
                         
                     }
                     Spacer()
                     VStack{
                         NavigationLink(destination: Sign_in()
-                                        .navigationBarHidden(true), label: {
+                            .navigationBarTitle(Text(" "))
+                            .navigationBarBackButtonHidden(true)
+                            .navigationBarHidden(true),
+                                       label: {
                         HStack{
                     //navigating to signup
                     Text("Don't have an account? ")
@@ -120,9 +131,7 @@ struct Sign_up: View {
                 }
                 .padding()
             }
-      
         }
-
     }
     
     func signup(username1:String,email1:String,password:String){
@@ -208,6 +217,7 @@ struct Sign_up: View {
             semaphore.wait()
 
         }
+    
 }
 
 struct Sign_up_Previews: PreviewProvider {
